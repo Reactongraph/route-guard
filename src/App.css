@@ -1,0 +1,37 @@
+.nav {
+  background-color: cadetblue;
+  border-color: #408b8e;
+}
+
+.width_88 {
+  width: 88%;
+  margin: 30px auto;
+}
+
+button {
+  color: #fff;
+  background-color: cadetblue;
+  border-color: #2e6da4;
+  width: 10%;
+}
+
+.heading {
+  color: aliceblue;
+  margin: 14px 0px;
+  padding-left: 5px;
+}
+
+.h3, h3 {
+  font-size: 24px;
+  color: slategrey;
+  font-style: oblique;
+}
+
+a {
+  font-size: 20px;
+}
+
+.preview {
+  width: 95%;
+  margin: 0 auto;
+}
