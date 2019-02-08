@@ -49,7 +49,9 @@ class Login extends React.Component {
 		return (
 			<div>
 				<p>To read the preview of novel, you need to log in</p>
-				<button className="btn button" onClick={this._onLogIn}>Log in</button>
+				<button className="btn button" onClick={this._onLogIn}>
+					Log in
+				</button>
 			</div>
 		);
 	}
@@ -85,7 +87,11 @@ class App extends Component {
 						<Route path="/public" component={Public} />
 						<PrivateRoute path="/private" component={Private} />
 						<Route path="/login" component={Login} />
-						{authUser.isAuthenticated && <button className="btn button" onClick={this._onLogOut}>Log Out</button>}
+						{authUser.isAuthenticated && (
+							<button className="btn button" onClick={this._onLogOut}>
+								Log Out
+							</button>
+						)}
 					</div>
 				</Route>
 			</div>

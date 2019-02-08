@@ -1,9 +1,9 @@
 Route guards are interfaces which can tell the router whether or not it should allow navigation to a requested route. They make this decision by looking for a true or false return value from a class which implements the given guard interface.
 
 ### `Install`
-$ git clone https://github.com/Reactongraph/react-auth-guard.git
-$ cd react-auth-guard
-$ npm install or yarn
+$ git clone https://github.com/Reactongraph/react-auth-guard.git<br>
+$ cd react-auth-guard<br>
+$ npm install or yarn<br>
 
 ### `npm start or yarn start`
 Runs the app in the development mode.
