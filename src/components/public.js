@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-const Public = (props) => (
+const Public = () => (
 	<div>
 		<h3>The Hound of Baskerville</h3>
 		<h3>The Alchemist</h3>

@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 
+// private route which will be displayed when authentication is done
 const Private = () => (
 	<div className="preview">
 		<h4>
