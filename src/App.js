@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import Public from './components/public';
 import Private from './components/private';
+import TheHoundBaskerville from './components/theHoundBaskerville';
+import TheAlchemist from './components/theAlchemist';
 import { Route, Link, Redirect } from 'react-router-dom';
 
 // Responsible for deciding whether to show private route or not
@@ -51,7 +53,7 @@ class Login extends React.Component {
 			return <Redirect to="/private" />;
 		}
 		return (
-			<div>
+			<div className='login-box'>
 				<p>To read the preview of novel, you need to log in</p>
 				<button className="btn button" onClick={this._onLogIn}>Log in</button>
 			</div>
@@ -70,7 +72,7 @@ class App extends Component {
 	render() {
 		return (
 			<div className="width_88">
-				<nav class="navbar navbar-default nav">
+				<nav class="navbar navbar-default nav custom-nav">
 					<div class="container-fluid">
 						<div class="navbar-header">
 							<h1 className="heading">Welcome To The World Of Books...</h1>
@@ -78,16 +80,18 @@ class App extends Component {
 					</div>
 				</nav>
 				<Route>
-					<div>
-						<ul>
+					<div class="container-fluid">
+						<ul className='list-unstyled list-inline links'>
 							<li><Link to="/public">Novels</Link></li>
 							<li><Link to="/private">Preview</Link></li>
 						</ul>
 						<Route path="/public" component={Public} />
 						<PrivateRoute path="/private" component={Private} />
+						<PrivateRoute path="/theHound" component={TheHoundBaskerville} />
+						<PrivateRoute path="/theAlchemist" component={TheAlchemist} />
 						<Route path="/login" component={Login} />
 						{authUser.isAuthenticated && (
-							<button className="btn button" onClick={this._onLogOut}>Log Out</button>
+							<button className="btn button logout-btn" onClick={this._onLogOut}>Log Out</button>
 						)}
 					</div>
 				</Route>
