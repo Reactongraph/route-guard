@@ -4,8 +4,10 @@
 }
 
 .width_88 {
-  width: 88%;
-  margin: 30px auto;
+  /* width: 88%; */
+  /* margin: 30px auto; */
+  background: #5aa2b0;
+  min-height: 100vh;
 }
 
 button {
@@ -13,6 +15,7 @@ button {
   background-color: cadetblue;
   border-color: #2e6da4;
   width: 10%;
+  outline: none !important;
 }
 
 .heading {
@@ -32,6 +35,77 @@ a {
 }
 
 .preview {
-  width: 95%;
-  margin: 0 auto;
+  margin: 20px auto;
+  color: #fff;
+}
+.preview h3{
+  color: #000;
+}
+.preview h2{
+  color: #1c2c53;
+  margin-bottom: 15px;
+}
+.preview h4{
+  font-size: 16px;
+  line-height: 18px;
+}
+.links {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0;
+  background-color: #1c2c53;
+  border-bottom: 1px solid #ccc;
+}
+.custom-nav{
+  margin-bottom: 0;
+}
+.links a{
+  padding: 15px 8px;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s ease;
+}
+.links a:hover{
+  color: #1c2c53;
+  background-color: #fff;
+}
+.book-links a{
+  display: inline-block;
+  margin: 10px 0;
+  color: #000;
+  font-size: 18px;
+}
+.book-links{
+  margin-top: 20px;
+}
+.login-box {
+  border: 2px solid #000;
+  display: table;
+  padding: 30px;
+  margin: 50px auto 20px;
+  color: #fff;
+  background-color: #1c2c53;
+  text-align: center;
+}
+.login-box button {
+  width: auto;
+  margin-top: 15px;
+  border: 2px solid #1c2c53;
+  transition: 0.3s ease;
+}
+.login-box button:hover{
+  border-color: #5f9ea0;
+  background-color: transparent;
+  color: #fff;
+}
+.logout-btn{
+  background-color: #1c2c53;
+  color: #fff;
+  border-width: 2px;
+}
+.logout-btn:hover{
+  border-color: #1c2c53;
+  color: #1c2c53;
+  background-color: transparent;
 }
